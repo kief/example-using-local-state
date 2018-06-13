@@ -21,8 +21,6 @@ deployment_stacks = Dir.entries('deployment').select { |stack|
   File.directory? File.join('deployment', stack) and File.exists?("deployment/#{stack}/stack.yaml")
 }
 
-task :default => [ :plan ]
-
 desc 'Show the plan for changes to the deployment stacks'
 task :plan => deployment_stacks.map { |deployment_stack|
   :"deployment:#{deployment_stack}:plan"

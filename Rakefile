@@ -9,3 +9,4 @@ CLEAN.include('work')
 CLEAN.include('dist')
 CLOBBER.include('vendor')
 
+task :default => [ :plan ]
