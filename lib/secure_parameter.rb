@@ -1,3 +1,4 @@
+require 'aws-sdk'
 
 class SecureParameter
 
