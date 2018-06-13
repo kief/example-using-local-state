@@ -1,8 +1,5 @@
 require 'rake/clean'
-
-Dir.glob('lib/tasks/*').each { |d|
-  Rake.add_rakelib d
-}
+require 'rake_cloudspin'
 
 CLEAN.include('build')
 CLEAN.include('work')
@@ -10,3 +7,5 @@ CLEAN.include('dist')
 CLOBBER.include('vendor')
 
 task :default => [ :plan ]
+
+RakeCloudspin.define_tasks
