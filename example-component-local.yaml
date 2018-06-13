@@ -1,0 +1,7 @@
+
+# Environment name.
+deployment_identifier: YOURNAME-sandbox
+
+# This should be something that your AWS crendentials have permission to
+# Create subdomains in.
+domain_name: SOMETHING
