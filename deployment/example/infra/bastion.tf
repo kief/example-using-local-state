@@ -1,7 +1,4 @@
 
-# KSM
-
-
 module "bastion" {
   source                = "github.com/kief/terraform-aws-bastion.git?ref=add_some_tags"
   version               = "~> 0.1"
@@ -28,5 +25,3 @@ module "bastion" {
   maximum_instances     = 1
   desired_instances     = 1
 }
-
-# Testing
