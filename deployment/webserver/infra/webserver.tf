@@ -28,7 +28,7 @@ resource "aws_instance" "webserver" {
   key_name                = "${aws_key_pair.webserver.key_name}"
 
   tags {
-    Name                  = "${var.service}-${var.component}-${var.deployment_identifier}-${var.estate}"
+    Name                  = "${var.service}-${var.component}-${var.deployment_identifier}"
     ServerRole            = "webserver"
     DeploymentIdentifier  = "${var.deployment_identifier}"
     Service               = "${var.service}"
